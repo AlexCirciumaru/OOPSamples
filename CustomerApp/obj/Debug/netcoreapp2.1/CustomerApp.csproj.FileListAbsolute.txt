@@ -1,0 +1,11 @@
+D:\C# Workspace\CustomerApp\bin\Debug\netcoreapp2.1\CustomerApp.deps.json
+D:\C# Workspace\CustomerApp\bin\Debug\netcoreapp2.1\CustomerApp.runtimeconfig.json
+D:\C# Workspace\CustomerApp\bin\Debug\netcoreapp2.1\CustomerApp.runtimeconfig.dev.json
+D:\C# Workspace\CustomerApp\bin\Debug\netcoreapp2.1\CustomerApp.dll
+D:\C# Workspace\CustomerApp\bin\Debug\netcoreapp2.1\CustomerApp.pdb
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.csprojAssemblyReference.cache
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.csproj.CoreCompileInputs.cache
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.AssemblyInfoInputs.cache
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.AssemblyInfo.cs
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.dll
+D:\C# Workspace\CustomerApp\obj\Debug\netcoreapp2.1\CustomerApp.pdb

@@ -1,0 +1,11 @@
+D:\C# Workspace\SellerApp\bin\Debug\netcoreapp2.1\SellerApp.deps.json
+D:\C# Workspace\SellerApp\bin\Debug\netcoreapp2.1\SellerApp.runtimeconfig.json
+D:\C# Workspace\SellerApp\bin\Debug\netcoreapp2.1\SellerApp.runtimeconfig.dev.json
+d:\C# Workspace\SellerApp\bin\Debug\netcoreapp2.1\SellerApp.dll
+d:\C# Workspace\SellerApp\bin\Debug\netcoreapp2.1\SellerApp.pdb
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.csprojAssemblyReference.cache
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.csproj.CoreCompileInputs.cache
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.AssemblyInfoInputs.cache
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.AssemblyInfo.cs
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.dll
+d:\C# Workspace\SellerApp\obj\Debug\netcoreapp2.1\SellerApp.pdb
