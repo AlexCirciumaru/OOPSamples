@@ -1,0 +1,11 @@
+D:\C# Workspace\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.deps.json
+D:\C# Workspace\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.runtimeconfig.json
+D:\C# Workspace\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.runtimeconfig.dev.json
+d:\C# Workspace\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.dll
+d:\C# Workspace\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.pdb
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.csprojAssemblyReference.cache
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.csproj.CoreCompileInputs.cache
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.AssemblyInfoInputs.cache
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.AssemblyInfo.cs
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.dll
+d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.pdb
