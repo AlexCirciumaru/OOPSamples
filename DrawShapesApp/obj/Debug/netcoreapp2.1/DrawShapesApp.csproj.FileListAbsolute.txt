@@ -9,3 +9,14 @@ d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.A
 d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.AssemblyInfo.cs
 d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.dll
 d:\C# Workspace\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.pdb
+D:\C#Projects\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.deps.json
+D:\C#Projects\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.runtimeconfig.json
+D:\C#Projects\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.runtimeconfig.dev.json
+d:\C#Projects\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.dll
+d:\C#Projects\OOPSamples\DrawShapesApp\bin\Debug\netcoreapp2.1\DrawShapesApp.pdb
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.csprojAssemblyReference.cache
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.csproj.CoreCompileInputs.cache
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.AssemblyInfoInputs.cache
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.AssemblyInfo.cs
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.dll
+d:\C#Projects\OOPSamples\DrawShapesApp\obj\Debug\netcoreapp2.1\DrawShapesApp.pdb

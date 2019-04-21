@@ -6,17 +6,45 @@ namespace DrawShapesApp
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Point Point {get; private set; }
-        public decimal Length {get; private set; }
+        public Point Point { get; private set; }
+        public double Length { get; private set; }
 
         public void ReadCoordinates()
         {
-            throw new NotImplementedException();
+            var inputLength = "";
+            var result = 0.0;
+            do
+            {
+                Console.Write("Enter the Length of the Square : ");
+                inputLength = Console.ReadLine();
+            } while (!Double.TryParse(inputLength, out result) || result <= 0);
+            Length = result;
         }
 
         public void Draw()
         {
-            throw new NotImplementedException();
+            ReadCoordinates();
+            for (int i = 1; i <= Length; i++)
+            {
+                //Display columns
+                for (int j = 1; j <= Length; j++)
+                {
+                    if (i == 1 || i == Length)
+                    {
+                        Console.Write("*");
+                    }
+                    else if (j == 1 || j == Length)
+                    {
+                        Console.Write("*");
+                    }
+                    else
+                    {
+                        Console.Write(" ");
+                    }
+                }
+                //Go to the next line
+                Console.WriteLine();
+            }
         }
 
         public string GetName()
