@@ -6,6 +6,7 @@ namespace DrawShapesApp
     {
         public decimal XCoordinate { get; set; }
         public decimal YCoordinate { get; set; }
+        public char Value { get; set; }
 
         public Point(decimal xCoordinate, decimal yCoordinate)
         {

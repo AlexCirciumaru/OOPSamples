@@ -6,7 +6,7 @@ namespace DrawShapesApp
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public Point CenterPoint { get; private set; }
+        public Point CenterPoint { get; set; }
         public double Radius { get; set; }
 
         public void ReadCoordinates()

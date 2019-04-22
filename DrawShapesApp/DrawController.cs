@@ -10,6 +10,8 @@ namespace DrawShapesApp.UI
 
         private IShape currentShape = null;
 
+        private List<IShape> canvas = new List<IShape>();
+
         private readonly DataRepository repository;
 
         private void ListAllShapes()
@@ -51,7 +53,7 @@ namespace DrawShapesApp.UI
 
         private IShape GetShapeToDraw()
         {
-            Console.WriteLine("Choose a Shape to draw : ");
+            Console.WriteLine("Add a shape on canvas : ");
             int shapeId = 0;
             shapeId = ReadShapeId();            
             var shapeToDraw = repository.Shapes.Where(entry => entry.GetId() == shapeId).SingleOrDefault();
@@ -71,6 +73,7 @@ namespace DrawShapesApp.UI
                 {
                     currentShape = GetShapeToDraw();
                     currentShape.Draw();
+                    canvas.Add(currentShape);
                 } 
                 catch (ShapeNotFoundException)
                 {
@@ -80,9 +83,22 @@ namespace DrawShapesApp.UI
             Console.ReadLine();           
         }
 
-        private void AttachShape(IShape shape)
+        private void ListShapesInCanvas()
         {
-
+            var shapesOnCanvas = canvas;
+            if(shapesOnCanvas.Count() == 0)
+            {
+                Console.WriteLine("Empty Canvas.");
+            }
+            else
+            {
+                Console.WriteLine("Shapes on Canvas : ");
+                foreach(IShape shape in canvas)
+                {
+                    Console.WriteLine(shape.GetName());
+                }
+            }
+            Console.WriteLine();
         }
 
         public DrawController(DataRepository repository)
@@ -92,7 +108,8 @@ namespace DrawShapesApp.UI
 
         public void Initialize()
         {
-            mainMenu.SetMenuItem(1, "Choose a Shape to Draw: ", () => HandleDrawShape());            
+            mainMenu.SetMenuItem(1, "Add a shape to canvas : ", () => HandleDrawShape());
+            mainMenu.OnPreRender = new Action( () => ListShapesInCanvas());
         }
 
         public void EnterMainMenu()
