@@ -95,7 +95,8 @@ namespace DrawShapesApp.UI
                 Console.WriteLine("Shapes on Canvas : ");
                 foreach(IShape shape in canvas)
                 {
-                    Console.WriteLine(shape.GetName());
+                    Console.Write(shape.GetName());
+                    shape.GetShapeDetails();
                 }
             }
             Console.WriteLine();

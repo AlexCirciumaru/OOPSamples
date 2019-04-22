@@ -56,5 +56,10 @@ namespace DrawShapesApp
         {
             return Id;
         }
+
+        public void GetShapeDetails()
+        {
+            Console.WriteLine(" with the length of " + Length);
+        }
     }
 }

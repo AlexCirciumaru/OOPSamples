@@ -58,5 +58,9 @@ namespace DrawShapesApp
         {
             return Id;
         }
+
+        public void GetShapeDetails(){
+            Console.WriteLine(" with radius of " + Radius);
+        }
     }
 }

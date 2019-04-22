@@ -11,5 +11,7 @@ namespace DrawShapesApp
         string GetName();
 
         int GetId();
+
+        void GetShapeDetails();
     }
 }
