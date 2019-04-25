@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\RectanglePlugin.deps.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\RectanglePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\RectanglePlugin.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.AssemblyInfo.cs
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.csproj.CopyComplete
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\RectaglePlugin\obj\Debug\netstandard2.0\RectanglePlugin.pdb

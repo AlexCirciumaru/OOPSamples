@@ -1,0 +1,12 @@
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\bin\Debug\netstandard2.0\Common.deps.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.AssemblyInfo.cs
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.csproj.CopyComplete
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Common\obj\Debug\netstandard2.0\Common.pdb

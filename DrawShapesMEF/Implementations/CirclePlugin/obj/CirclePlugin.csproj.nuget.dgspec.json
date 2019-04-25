@@ -1,0 +1,170 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Implementations\\CirclePlugin\\CirclePlugin.csproj": {}
+  },
+  "projects": {
+    "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\Abstractions.csproj",
+        "projectName": "Abstractions",
+        "projectPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\Abstractions.csproj",
+        "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
+        "outputPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex.circiumaru\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
+        "outputPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex.circiumaru\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\Abstractions.csproj": {
+                "projectPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Abstractions\\Abstractions.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Implementations\\CirclePlugin\\CirclePlugin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Implementations\\CirclePlugin\\CirclePlugin.csproj",
+        "projectName": "CirclePlugin",
+        "projectPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Implementations\\CirclePlugin\\CirclePlugin.csproj",
+        "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
+        "outputPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Implementations\\CirclePlugin\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\alex.circiumaru\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\Common.csproj": {
+                "projectPath": "D:\\C# Workspace\\OOPSamplesCatalin\\OOPSamples\\Lesson2\\Common\\Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Composition": {
+              "target": "Package",
+              "version": "[1.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

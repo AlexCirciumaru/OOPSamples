@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="IDrawableShape.cs" />
+    <Content Include="IReadableShape.cs" />
+    <Content Include="IShapePlugin.cs" />
+  </ItemGroup>
+</Project>

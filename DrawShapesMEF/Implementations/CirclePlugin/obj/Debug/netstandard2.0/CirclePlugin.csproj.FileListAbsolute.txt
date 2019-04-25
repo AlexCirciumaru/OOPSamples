@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\CirclePlugin.deps.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\CirclePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\CirclePlugin.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.AssemblyInfo.cs
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.csproj.CopyComplete
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\CirclePlugin\obj\Debug\netstandard2.0\CirclePlugin.pdb

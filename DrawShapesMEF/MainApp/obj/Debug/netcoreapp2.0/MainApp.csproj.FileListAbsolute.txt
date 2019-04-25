@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\MainApp.deps.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\MainApp.runtimeconfig.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\MainApp.runtimeconfig.dev.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\MainApp.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\MainApp.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\Abstractions.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\bin\Debug\netcoreapp2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.AssemblyInfo.cs
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.csproj.CopyComplete
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\MainApp\obj\Debug\netcoreapp2.0\MainApp.pdb

@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\SquarePlugin.deps.json
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\SquarePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\SquarePlugin.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.AssemblyInfo.cs
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.csproj.CopyComplete
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.dll
+D:\C# Workspace\OOPSamplesCatalin\OOPSamples\Lesson2\Implementations\SquarePlugin\obj\Debug\netstandard2.0\SquarePlugin.pdb
