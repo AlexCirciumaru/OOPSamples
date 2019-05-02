@@ -7,12 +7,12 @@ using System.Runtime.Loader;
 using CustomerAppPaymentP.Abstractions;
 
 
-namespace Lesson3.MainApp
+namespace CustomerAppPaymentP.MainApp
 {
-    public class ShapePluginManager<T>
+    public class GenericPluginManager<T>
     {        
 
-        public ShapePluginManager()
+        public GenericPluginManager()
         {
             Plugins = new List<T>();
         }

@@ -25,6 +25,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Abstractions.dll": {}
+        }
+      },
+      "Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Abstractions": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.dll": {}
+        }
       }
     }
   },
@@ -171,10 +194,22 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../../Abstractions/Abstractions.csproj",
+      "msbuildProject": "../../Abstractions/Abstractions.csproj"
+    },
+    "Common/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Common.csproj",
+      "msbuildProject": "../../Common/Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Abstractions >= 1.0.0",
+      "Common >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -185,11 +220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\CardPlugin.csproj",
+      "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\CardPlugin.csproj",
       "projectName": "CardPlugin",
-      "projectPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\CardPlugin.csproj",
+      "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\CardPlugin.csproj",
       "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
-      "outputPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\obj\\",
+      "outputPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Implementations\\CardPlugin\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -205,7 +240,14 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {
+              "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj"
+            },
+            "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj": {
+              "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

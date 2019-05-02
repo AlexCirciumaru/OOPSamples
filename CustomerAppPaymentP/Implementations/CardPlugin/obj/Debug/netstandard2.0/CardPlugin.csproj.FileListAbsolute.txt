@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\CardPlugin.deps.json
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\CardPlugin.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\CardPlugin.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.AssemblyInfo.cs
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.csproj.CopyComplete
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\CardPlugin\obj\Debug\netstandard2.0\CardPlugin.csprojAssemblyReference.cache

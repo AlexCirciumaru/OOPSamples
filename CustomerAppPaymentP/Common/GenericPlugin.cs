@@ -1,6 +1,8 @@
+using CustomerAppPaymentP.Abstractions;
+
 namespace CustomerAppPaymentP.Common
 {
-    public abstract class GenericPlugin
+    public abstract class GenericPlugin<T> : IPaymentProcessorPlugin where T : IPaymentProcessor, new()
     {
         private string paymentName = "";
 
@@ -12,6 +14,13 @@ namespace CustomerAppPaymentP.Common
         public string GetName()
         {
             return paymentName;
+        }
+
+        public IPaymentProcessor ReadPaymentProcessor()
+        {
+            var newPaymentProcessor = new T();
+            newPaymentProcessor.ReadDetails();
+            return newPaymentProcessor;
         }
     }
 }

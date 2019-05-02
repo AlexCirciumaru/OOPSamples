@@ -5,5 +5,7 @@ namespace CustomerAppPaymentP.Abstractions
         void ProcessPayment();
 
         void SetCallback();
+
+        void ReadDetails();
     }
 }

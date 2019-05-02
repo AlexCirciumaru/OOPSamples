@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {}
+    "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {}
   },
   "projects": {
-    "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {
+    "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj",
+        "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj",
         "projectName": "Abstractions",
-        "projectPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj",
+        "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj",
         "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
-        "outputPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\obj\\",
+        "outputPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

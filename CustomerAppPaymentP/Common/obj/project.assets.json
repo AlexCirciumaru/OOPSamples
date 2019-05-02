@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Abstractions.dll": {}
+        }
       }
     }
   },
@@ -171,10 +181,16 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../Abstractions/Abstractions.csproj",
+      "msbuildProject": "../Abstractions/Abstractions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Abstractions >= 1.0.0",
       "NETStandard.Library >= 2.0.3"
     ]
   },
@@ -185,11 +201,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj",
+      "projectUniqueName": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj",
+      "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\alex.circiumaru\\.nuget\\packages\\",
-      "outputPath": "D:\\C# Workspace\\OOPSamples\\CustomerAppPaymentP\\Common\\obj\\",
+      "outputPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -205,7 +221,11 @@
       },
       "frameworks": {
         "netstandard2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj": {
+              "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Abstractions\\Abstractions.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

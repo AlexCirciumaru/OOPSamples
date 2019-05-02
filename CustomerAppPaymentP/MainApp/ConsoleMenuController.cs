@@ -4,16 +4,21 @@ using System.Linq;
 using CustomerAppPaymentP.UI;
 using CustomerAppPaymentP.Repository;
 using CustomerAppPaymentP.Models;
+using CustomerAppPaymentP.Common;
+using CustomerAppPaymentP.Abstractions;
 
 namespace CustomerAppPaymentP.MainApp
 {
     public class ConsoleMenuController
     {
         private Menu clientMenu;
-        private Menu loginMenu = new Menu();
+        private Menu loginMenu;
+        private Menu paymentMenu;
         private Seller seller;
         private Customer currentCustomer = null;
         private readonly DataRepository repository;
+        private List<IPaymentProcessorPlugin> paymentPlugins = new List<IPaymentProcessorPlugin>();
+        private IPaymentProcessor currentPaymentProccesor = null;
 
         private void ListProductsInStock()
         {
@@ -70,24 +75,10 @@ namespace CustomerAppPaymentP.MainApp
 
         }
 
-        private int ReadProductId()
-        {
-            int productId = 0;
-            var readId = "";
-            do
-            {
-                Console.Write("Product Id: ");
-                readId = Console.ReadLine();
-
-            } while (!Int32.TryParse(readId, out productId));
-
-            return productId;
-        }
-
         private Product GetProductToAdd()
         {
             int productId = 0;
-            productId = ReadProductId();
+            productId = DataReaderHelper.ReadIntValue("\nProduct Id :");
             var currentStock = repository.ProductsStock;
             var stockEntry = currentStock.StockEntries.Where(entry => entry.Product.Id == productId)
                                      .SingleOrDefault();
@@ -98,20 +89,6 @@ namespace CustomerAppPaymentP.MainApp
             }
 
             return retVal;
-        }
-
-        private ulong ReadQty()
-        {
-            var readString = "";
-            ulong qty = 0;
-            do
-            {
-                Console.Write("Qty (valid number): ");
-                readString = Console.ReadLine();
-
-            } while (!ulong.TryParse(readString, out qty));
-
-            return qty;
         }
 
         private void HandleFinalizeOrder()
@@ -134,8 +111,8 @@ namespace CustomerAppPaymentP.MainApp
         {
             Console.Clear();
             ListProductsInOrder();
-            int productId = ReadProductId();
-            ulong qty = (ulong)ReadQty();
+            int productId = DataReaderHelper.ReadIntValue("\nProduct Id : ");
+            ulong qty = DataReaderHelper.ReadLongValue("\nQty (valid number): ");
             try
             {
                 currentCustomer.RemoveItemFromOrder(productId, qty);
@@ -159,10 +136,10 @@ namespace CustomerAppPaymentP.MainApp
             Console.Clear();
             ListProductsInStock();
             var productToAdd = GetProductToAdd();
-            var qty = ReadQty();
+            ulong qty = DataReaderHelper.ReadLongValue("\nQty (valid number): ");
             try
             {
-                currentCustomer.AddItemToOrder(productToAdd, (ulong)qty);
+                currentCustomer.AddItemToOrder(productToAdd, qty);
                 Console.WriteLine($"Product {productToAdd.Name} {qty} pcs added to the order");
             }
             catch (Exception e)
@@ -203,21 +180,13 @@ namespace CustomerAppPaymentP.MainApp
             Console.ReadLine();
         }
 
-        private string ReadPhoneNumber()
-        {
-            String phoneNumber = "";
-            Console.Write("\nPhone Number : ");
-            phoneNumber = Console.ReadLine();
-            return phoneNumber;
-        }
-
         private void HandleCustomerLogin()
         {
             do
             {
                 try
                 {
-                    String phoneNumber = ReadPhoneNumber();
+                    String phoneNumber = DataReaderHelper.ReadStringValue("\nPhone Number : ");
                     currentCustomer = FindCurrentCustomer(phoneNumber);
                 }
                 catch (ArgumentException)
@@ -273,6 +242,19 @@ namespace CustomerAppPaymentP.MainApp
             }
         }
 
+        private void StartNewTransaction()
+        {
+            Console.Clear();
+            
+            //currentPaymentProccesor.SetCallback();       
+        }
+
+        public void AddAvailablePaymentProcessor(IPaymentProcessorPlugin paymentPlugin)
+        {
+            paymentMenu.SetMenuItem(paymentPlugins.Count + 1, paymentPlugin.GetName(), () => paymentPlugin.ReadPaymentProcessor());
+            paymentPlugins.Add(paymentPlugin);
+        }
+
         public ConsoleMenuController(DataRepository repository)
         {
             this.repository = repository;
@@ -283,14 +265,16 @@ namespace CustomerAppPaymentP.MainApp
         {
             Menu newOrderMenu = new Menu();
             Menu sellerMenu = new Menu();
+            paymentMenu = new Menu();
+            loginMenu = new Menu();
             clientMenu = new Menu();
 
             newOrderMenu.SetMenuItem(1, "Add product", () => HandleAddNewProduct());
             newOrderMenu.SetMenuItem(2, "Remove product from order", () => HandleRemoveProduct());
-            newOrderMenu.SetMenuItem(3, "Finalize Order", () => HandleFinalizeOrder());
-            newOrderMenu.OnPreRender = new Action(() => ListProductsInOrder());
+            newOrderMenu.SetMenuItem(3, "Finalize Order", paymentMenu, () => StartNewTransaction());
+            newOrderMenu.OnPreRender = new Action( () => ListProductsInOrder());
 
-            clientMenu.OnPreRender = new Action(() => ShowWelcomeMessage());
+            clientMenu.OnPreRender = new Action( () => ShowWelcomeMessage());
             clientMenu.SetMenuItem(1, "New Order", newOrderMenu, () => currentCustomer.StartNewOrder(repository.ProductsStock));
             clientMenu.SetMenuItem(2, "View All Products", () => HandleViewAllProducts());
             clientMenu.SetMenuItem(3, "View Products in stock", () => HandleViewStock());
@@ -301,8 +285,9 @@ namespace CustomerAppPaymentP.MainApp
             sellerMenu.SetMenuItem(3, "Logout", () => HandleLogout());
 
             loginMenu.SetMenuItem(1, "Login as Customer", clientMenu, () => HandleCustomerLogin());
-            loginMenu.SetMenuItem(2, "Login as seller", sellerMenu, () => HandleSellerLogin());
+            loginMenu.SetMenuItem(2, "Login as Seller", sellerMenu, () => HandleSellerLogin());
         }
+
         public void EnterMainMenu()
         {
             loginMenu.EnterMenu();

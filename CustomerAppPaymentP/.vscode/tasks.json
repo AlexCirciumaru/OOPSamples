@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/CustomerAppPaymentP.csproj"
+                "${workspaceFolder}/MainApp/MainApp.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -17,7 +17,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/CustomerAppPaymentP.csproj"
+                "${workspaceFolder}/MainApp/MainApp.csproj"
             ],
             "problemMatcher": "$tsc"
         },
@@ -28,7 +28,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/CustomerAppPaymentP.csproj"
+                "${workspaceFolder}/MainApp/MainApp.csproj"
             ],
             "problemMatcher": "$tsc"
         }

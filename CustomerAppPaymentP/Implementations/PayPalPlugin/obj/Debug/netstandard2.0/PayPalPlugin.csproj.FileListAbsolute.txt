@@ -1,0 +1,14 @@
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\PayPalPlugin.deps.json
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\PayPalPlugin.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\PayPalPlugin.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Abstractions.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Common.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Abstractions.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Common.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.csprojAssemblyReference.cache
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.csproj.CoreCompileInputs.cache
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.AssemblyInfoInputs.cache
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.AssemblyInfo.cs
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.csproj.CopyComplete
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.pdb
