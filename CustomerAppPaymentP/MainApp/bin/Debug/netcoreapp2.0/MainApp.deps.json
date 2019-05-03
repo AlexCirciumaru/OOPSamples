@@ -9,13 +9,17 @@
       "MainApp/1.0.0": {
         "dependencies": {
           "Abstractions": "1.0.0",
-          "Common": "1.0.0"
+          "Common": "1.0.0",
+          "Models": "1.0.0"
         },
         "runtime": {
           "MainApp.dll": {}
         }
       },
       "Abstractions/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "runtime": {
           "Abstractions.dll": {}
         }
@@ -26,6 +30,11 @@
         },
         "runtime": {
           "Common.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
         }
       }
     }
@@ -42,6 +51,11 @@
       "sha512": ""
     },
     "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

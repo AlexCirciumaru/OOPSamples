@@ -200,6 +200,9 @@
       "Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Abstractions.dll": {}
         },
@@ -218,6 +221,16 @@
         },
         "runtime": {
           "bin/placeholder/Common.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
         }
       }
     }
@@ -701,13 +714,19 @@
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Abstractions >= 1.0.0",
       "Common >= 1.0.0",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -743,6 +762,9 @@
             },
             "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj": {
               "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Common\\Common.csproj"
+            },
+            "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Models\\Models.csproj": {
+              "projectPath": "D:\\C# Workspace\\OOPSamples\\OOPSamples\\CustomerAppPaymentP\\Models\\Models.csproj"
             }
           }
         }

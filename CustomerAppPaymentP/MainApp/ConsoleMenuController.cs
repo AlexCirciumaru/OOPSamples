@@ -19,6 +19,7 @@ namespace CustomerAppPaymentP.MainApp
         private readonly DataRepository repository;
         private List<IPaymentProcessorPlugin> paymentPlugins = new List<IPaymentProcessorPlugin>();
         private IPaymentProcessor currentPaymentProccesor = null;
+        private TransactionInfo currentTransactionInfo = null;
 
         private void ListProductsInStock()
         {
@@ -78,7 +79,7 @@ namespace CustomerAppPaymentP.MainApp
         private Product GetProductToAdd()
         {
             int productId = 0;
-            productId = DataReaderHelper.ReadIntValue("\nProduct Id :");
+            productId = DataReaderHelper.ReadIntValue("\nProduct Id : ");
             var currentStock = repository.ProductsStock;
             var stockEntry = currentStock.StockEntries.Where(entry => entry.Product.Id == productId)
                                      .SingleOrDefault();
@@ -89,22 +90,6 @@ namespace CustomerAppPaymentP.MainApp
             }
 
             return retVal;
-        }
-
-        private void HandleFinalizeOrder()
-        {
-            try
-            {
-                currentCustomer.FinalizeOrder(repository.ProductsStock);
-                Console.WriteLine("\n\nSuccessfully finalized the order. Press enter to go back to Main Menu.");
-            }
-            catch (InvalidOperationException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-
-            Console.ReadLine();
-            clientMenu.EnterMenu();
         }
 
         private void HandleRemoveProduct()
@@ -244,14 +229,38 @@ namespace CustomerAppPaymentP.MainApp
 
         private void StartNewTransaction()
         {
+            paymentMenu.EnterMenu();
             Console.Clear();
-            
-            //currentPaymentProccesor.SetCallback();       
+            currentPaymentProccesor.ProcessPayment();
+            currentPaymentProccesor.SetCallback(currentCustomer, repository.ProductsStock);
+            currentTransactionInfo = GetTransactionInfo();
+            Console.WriteLine("***********" + currentTransactionInfo.CustomerName + "********" + currentTransactionInfo.OrderValue + "****************" + currentTransactionInfo.PaymentProcessorName);
+            Console.ReadLine();
+            //HandleFinalizeOrder(); 
+            clientMenu.EnterMenu();
+        }
+
+        private TransactionInfo GetTransactionInfo()
+        {
+            return new TransactionInfo { CustomerName = currentCustomer.Name, OrderValue = currentCustomer.TotalIncome, PaymentProcessorName = GetCurrentPaymentPluginName()};
+        }
+
+        private string GetCurrentPaymentPluginName()
+        {
+            string pluginName = "";
+            foreach(IPaymentProcessorPlugin plugin in paymentPlugins)
+            {
+                if(currentPaymentProccesor.GetType().Namespace.Equals(plugin.GetType().Namespace))
+                {
+                    pluginName = plugin.GetName();
+                }
+            }
+            return pluginName;
         }
 
         public void AddAvailablePaymentProcessor(IPaymentProcessorPlugin paymentPlugin)
         {
-            paymentMenu.SetMenuItem(paymentPlugins.Count + 1, paymentPlugin.GetName(), () => paymentPlugin.ReadPaymentProcessor());
+            paymentMenu.SetMenuItem(paymentPlugins.Count + 1, paymentPlugin.GetName(), () => currentPaymentProccesor = paymentPlugin.ReadPaymentProcessor());
             paymentPlugins.Add(paymentPlugin);
         }
 
@@ -274,18 +283,18 @@ namespace CustomerAppPaymentP.MainApp
             newOrderMenu.SetMenuItem(3, "Finalize Order", paymentMenu, () => StartNewTransaction());
             newOrderMenu.OnPreRender = new Action( () => ListProductsInOrder());
 
-            clientMenu.OnPreRender = new Action( () => ShowWelcomeMessage());
+            clientMenu.OnPreRender = new Action(() => ShowWelcomeMessage());
             clientMenu.SetMenuItem(1, "New Order", newOrderMenu, () => currentCustomer.StartNewOrder(repository.ProductsStock));
             clientMenu.SetMenuItem(2, "View All Products", () => HandleViewAllProducts());
             clientMenu.SetMenuItem(3, "View Products in stock", () => HandleViewStock());
-            clientMenu.SetMenuItem(4, "Logout", () => HandleLogout());
+            clientMenu.SetMenuItem(0, "Logout", () => HandleLogout());
 
             sellerMenu.SetMenuItem(1, "View All Products", () => HandleViewAllProducts());
             sellerMenu.SetMenuItem(2, "View Products in Stock", () => HandleViewStock());
             sellerMenu.SetMenuItem(3, "Logout", () => HandleLogout());
 
             loginMenu.SetMenuItem(1, "Login as Customer", clientMenu, () => HandleCustomerLogin());
-            loginMenu.SetMenuItem(2, "Login as Seller", sellerMenu, () => HandleSellerLogin());
+            loginMenu.SetMenuItem(2, "Login as Seller", sellerMenu, () => HandleSellerLogin());       
         }
 
         public void EnterMainMenu()

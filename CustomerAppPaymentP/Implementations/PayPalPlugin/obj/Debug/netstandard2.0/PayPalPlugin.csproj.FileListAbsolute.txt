@@ -12,3 +12,5 @@ D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPal
 D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.csproj.CopyComplete
 D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.dll
 D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\obj\Debug\netstandard2.0\PayPalPlugin.pdb
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Models.dll
+D:\C# Workspace\OOPSamples\OOPSamples\CustomerAppPaymentP\Implementations\PayPalPlugin\bin\Debug\netstandard2.0\Models.pdb

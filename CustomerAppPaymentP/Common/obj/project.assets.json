@@ -29,11 +29,24 @@
       "Abstractions/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Abstractions.dll": {}
         },
         "runtime": {
           "bin/placeholder/Abstractions.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
         }
       }
     }
@@ -186,6 +199,11 @@
       "type": "project",
       "path": "../Abstractions/Abstractions.csproj",
       "msbuildProject": "../Abstractions/Abstractions.csproj"
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../Models/Models.csproj",
+      "msbuildProject": "../Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {

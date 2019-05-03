@@ -1,11 +1,11 @@
 using System;
 
-namespace CustomerAppPaymentP.Common
+namespace CustomerAppPaymentP.Models
 {
     public class TransactionInfo
     {
         public string CustomerName { get; set; }
-        public double OrderValue { get; set; }
+        public decimal OrderValue { get; set; }
         public string PaymentProcessorName { get; set; }
     }
 }

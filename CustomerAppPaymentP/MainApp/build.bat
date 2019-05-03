@@ -6,8 +6,18 @@ cd ..\CardPlugin
 dotnet build
 echo "Done building implementations"
 
+echo "Building abstractions"
+cd ..\..\Abstractions
+dotnet build
+echo "Abstractions Build done"
+
+echo "Building common"
+cd ..\Common
+dotnet build
+echo "Common Build done"
+
 echo "Building main app"
-cd ..\..\MainApp
+cd ..\MainApp
 dotnet build
 echo "Main App Build done"
 

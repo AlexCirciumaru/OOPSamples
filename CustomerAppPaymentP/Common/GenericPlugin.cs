@@ -19,7 +19,7 @@ namespace CustomerAppPaymentP.Common
         public IPaymentProcessor ReadPaymentProcessor()
         {
             var newPaymentProcessor = new T();
-            newPaymentProcessor.ReadDetails();
+            newPaymentProcessor.ReadDetails();            
             return newPaymentProcessor;
         }
     }

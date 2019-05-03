@@ -23,8 +23,16 @@
         }
       },
       "Abstractions/1.0.0": {
+        "dependencies": {
+          "Models": "1.0.0"
+        },
         "runtime": {
           "Abstractions.dll": {}
+        }
+      },
+      "Models/1.0.0": {
+        "runtime": {
+          "Models.dll": {}
         }
       }
     }
@@ -50,6 +58,11 @@
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
     },
     "Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Models/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

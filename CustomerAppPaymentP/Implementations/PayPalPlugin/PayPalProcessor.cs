@@ -1,5 +1,6 @@
 using System;
 
+using CustomerAppPaymentP.Models;
 using CustomerAppPaymentP.Abstractions;
 using CustomerAppPaymentP.Common;
 
@@ -21,9 +22,20 @@ namespace CustomerAppPaymentP.Implementations.PayPalPlugin
             Password = DataReaderHelper.ReadStringValue("Password : ");
         }
 
-        public void SetCallback()
+        public void SetCallback(Customer customer, Stock stock)
         {
-            
+            Console.ReadLine();                        
+            try
+            {
+                customer.FinalizeOrder(stock);
+                Console.WriteLine("\n\nSuccessfully finalized the order. Press enter to go back to Main Menu.");
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+
+            Console.ReadLine();
         }
     }
 }
