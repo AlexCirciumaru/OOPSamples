@@ -20,7 +20,6 @@ namespace CustomerAppPaymentP.MainApp
         private List<IPaymentProcessorPlugin> paymentPlugins = new List<IPaymentProcessorPlugin>();
         private IPaymentProcessor currentPaymentProccesor = null;
         private TransactionInfo currentTransactionInfo = null;
-        private List<TransactionInfo> transactionHistory = new List<TransactionInfo>();
 
         private void ListProductsInStock()
         {
@@ -235,10 +234,7 @@ namespace CustomerAppPaymentP.MainApp
             currentPaymentProccesor.ProcessPayment();
             currentPaymentProccesor.SetCallback(currentCustomer, repository.ProductsStock);
             currentTransactionInfo = GetTransactionInfo();
-            Console.WriteLine("Customer Name : " + currentTransactionInfo.CustomerName
-                             + "\nOrder Value : " + currentTransactionInfo.OrderValue
-                             + "\nPayment method : " + currentTransactionInfo.PaymentProcessorName);
-            transactionHistory.Add(currentTransactionInfo);
+            Console.WriteLine("***********" + currentTransactionInfo.CustomerName + "********" + currentTransactionInfo.OrderValue + "****************" + currentTransactionInfo.PaymentProcessorName);
             Console.ReadLine();
             //HandleFinalizeOrder(); 
             clientMenu.EnterMenu();
@@ -260,31 +256,6 @@ namespace CustomerAppPaymentP.MainApp
                 }
             }
             return pluginName;
-        }
-
-        private void ListAllTransactions()
-        {
-            Console.WriteLine("Transaction History : ");            
-            Console.WriteLine("{0,4}|{1,60}|{2,30}", "Customer Name ", "Order Value", "Payment Method");
-            foreach (var transaction in transactionHistory)
-            {
-                Console.WriteLine("{0,4}|{1,60}|{2,30}", transaction.CustomerName, transaction.OrderValue, transaction.PaymentProcessorName);
-            }
-        }
-
-        private void HandleViewAllTransactions()
-        {
-            Console.Clear();
-            if (transactionHistory.Count() == 0)
-            {
-                Console.WriteLine("There are no transactions !!");
-            }
-            else
-            {
-                ListAllTransactions();
-            }
-
-            Console.ReadLine();
         }
 
         public void AddAvailablePaymentProcessor(IPaymentProcessorPlugin paymentPlugin)
@@ -320,8 +291,7 @@ namespace CustomerAppPaymentP.MainApp
 
             sellerMenu.SetMenuItem(1, "View All Products", () => HandleViewAllProducts());
             sellerMenu.SetMenuItem(2, "View Products in Stock", () => HandleViewStock());
-            sellerMenu.SetMenuItem(3, "View Transaction HIstory", () => HandleViewAllTransactions());
-            sellerMenu.SetMenuItem(4, "Logout", () => HandleLogout());
+            sellerMenu.SetMenuItem(3, "Logout", () => HandleLogout());
 
             loginMenu.SetMenuItem(1, "Login as Customer", clientMenu, () => HandleCustomerLogin());
             loginMenu.SetMenuItem(2, "Login as Seller", sellerMenu, () => HandleSellerLogin());       

@@ -66,7 +66,6 @@ namespace CustomerAppPaymentP.UI
 
         public void EnterMenu()
         {
-            continueMenu = true;
             do
             {
                 RenderMenu();
